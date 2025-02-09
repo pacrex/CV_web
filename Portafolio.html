@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio web</title>
+
+    <link rel="shortcut icon" href="resources/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="CSS/site.css">
+
+    <!-- css.gg -->
+    <link href='https://css.gg/css' rel='stylesheet'>
+    
+    <!-- UNPKG -->
+    <link href='https://unpkg.com/css.gg/icons/all.css' rel='stylesheet'>
+    
+    <!-- JSDelivr -->
+    <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="JS/site.js"></script>
+</head>
+<body>
+    <div class="main-contain">
+        <aside>
+            <div class="profile">
+                <img src="resources/avatar/cal.jpg" id="photo-profile" class="my-photo">
+
+                <div>
+                    <h1 class="title">José Francisco Amador Sánchez</h1>
+                    <div class="badge-profile">Alumno</div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100077063538708" target="_blank"><i class="gg-facebook"></i></a>
+                        <a href="https://x.com/@JOSEFRA71063864" target="_blank"><i class="gg-twitter"></i></a>
+                        <a href="https://www.youtube.com/@josefranciscoamadorsanchez3938" target="_blank"><i class="gg-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <ul class="contacts-block">
+                        <li class="contacts-block-item"><i class="gg-calendar"></i>&nbsp;&nbsp;31 de Marzo del 2004</li>
+                        <li class="contacts-block-item"><i class="gg-pin"></i>&nbsp;&nbsp;Puebla, Puebla</li>
+                        <li class="contacts-block-item"><i class="gg-mail"></i>&nbsp;&nbsp;<a href="mailto:jfamadorboy024@gmail.com">jfamadorboy024@gmail.com</a></li>
+                        <li class="contacts-block-item"><i class="gg-phone"></i>&nbsp;&nbsp;+52 22-16-89-11-54</li>
+                        <li class="contacts-block-item"><i class="gg-phone"></i>&nbsp;&nbsp;+52 22-16-89-11-54</li>
+                    </ul>
+                    <a href="#" class="btn">Download CV</a>
+                </div>
+            </div>
+        </aside>
+        <section class="resume">
+            <div>
+                <h2 class="title bordered">Portafolio</h2>
+                <div class="portfolio">
+                    <img src="https://i.pinimg.com/736x/59/82/d3/5982d3ead029a81941b03b8b64d3076a.jpg" alt="" onclick="showImage(this)">
+                    <img src="https://i.pinimg.com/736x/8c/f0/9e/8cf09eff5e1b888d33ac086d55e09ad6.jpg" alt="" onclick="showImage(this)">
+                    <img src="https://i.pinimg.com/736x/1c/21/fd/1c21fde69e29d5e5293c9fe39ecb0d2d.jpg" alt="" onclick="showImage(this)">
+                </div>
+                <div class="modal" id="preview">
+                    <i class="gg-close" id="closeModalIcon" onclick="cerrarModal()"></i>
+                </div>                
+                <br>
+                
+            </div>
+
+            <header>
+                <div class="menu-circle">
+                    <i class="gg-menu-oreos" onclick="toggleMenu()"></i>
+                </div>
+                <div class="inner-menu js-menu">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="Index.html">Acerca de...</a></li>
+                        <li class="nav-item"><a href="Portafolio.html">Portafolio</a></li>
+                    </ul>
+                </div>
+            </header>
+            </div>
+        </section>
+    </div>
+    <footer>Autor: José Francisco Amador Sánchez</footer>
+    <div id="copyright" style="display: none;">2025 José Francisco Amador Sánchez</div>
+
+    <script src="JS/site.js"></script>
+</body>
+</html>
